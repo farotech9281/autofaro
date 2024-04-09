@@ -1,0 +1,14 @@
+{
+  "name": "autofaro",
+  "version": "1.0.0",
+  "description": "AutoFaro is a Discord application powered by AI designed to automate processes",
+  "main": "index.js",
+  "repository": "https://github.com/farotech9281/autofaro",
+  "author": "Sasser7",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
