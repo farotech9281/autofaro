@@ -4,7 +4,7 @@ AutoFaro is a Discord application powered by AI designed to automate processes
 
 ## Features
 
-- ~~Reply with '/ping'~~
+- ~~Reply with 'Pong' on /ping~~
 
 ## Getting Started
 
