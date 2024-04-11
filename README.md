@@ -1,4 +1,4 @@
-# AutoFaro
+# 🐶AutoFaro🐶
 
 AutoFaro is a Discord application powered by AI designed to automate processes
 
