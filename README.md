@@ -2,11 +2,13 @@
 
 AutoFaro is a Discord application powered by AI designed to automate processes
 
-## Features
+## ✨Features✨
 
-- ~~Reply with 'Pong' on /ping~~
+- Reply with *"Pong!"* on /ping
 
-## Getting Started
+**More features soon!**
+
+## 🚀Getting Started🚀
 
 Create .env in main repository folder and provide your token by adding these variables:
 
