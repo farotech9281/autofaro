@@ -8,9 +8,17 @@ AutoFaro is a Discord application powered by AI designed to automate processes
 
 **More features soon!**
 
+## 🛠️TODO🛠️
+
+- Counter on /ping
+- Make buttons work
+- Database connection
+- Implement AI service for texting
+- Implement server management functions
+
 ## 🚀Getting Started🚀
 
-Create .env in main repository folder and provide your token by adding these variables:
+Create .env in main repository folder and provide neccesary info by adding variables:
 
 * DISCORD_TOKEN
 * CLIENT_ID
