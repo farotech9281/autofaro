@@ -16,5 +16,7 @@ Create .env in main repository folder and provide your token by adding these var
 * CLIENT_ID
 * GUILD_ID
 
+Then run a "deploy" script.
+
 To propose a feature or report a bug, open an issue on this GitHub repo. Contributions are welcome!
 
