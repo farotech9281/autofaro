@@ -1,6 +1,6 @@
-const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
-const fs = require('node:fs');
+const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const path = require('node:path');
+const fs = require('node:fs');
 require('dotenv').config();
 
 // Create a new client instance with the required intents
@@ -25,26 +25,16 @@ fs.readdirSync(commandsPath).forEach(folder => {
     }
 });
 
-// Event listener for when the client is ready
-client.once(Events.ClientReady, () => {
-    console.log('🐶Faro🐶 is up!✅');
-});
-
-// Event listener for command interactions
-client.on(Events.InteractionCreate, async interaction => {
-    if (!interaction.isCommand()) return;
-
-    const command = client.commands.get(interaction.commandName);
-    if (!command) {
-        console.error(`🐶Faro🐶: Command not found: ${interaction.commandName}`);
-        return;
-    }
-
-    try {
-        await command.execute(interaction);
-    } catch (error) {
-        console.error(`🐶Faro🐶: Command execution error: ${interaction.commandName}: ${error}`);
-        await interaction.reply({ content: '🐶Faro🐶: An error occurred while executing the command.', ephemeral: true });
+// Load events from the 'events' folder
+const eventsPath = path.join(__dirname, 'events');
+fs.readdirSync(eventsPath).forEach(file => {
+    if (file.endsWith('.js')) {
+        const event = require(path.join(eventsPath, file));
+        if (event.once) {
+            client.once(event.name, (...args) => event.execute(...args, client));
+        } else {
+            client.on(event.name, (...args) => event.execute(...args, client));
+        }
     }
 });
 

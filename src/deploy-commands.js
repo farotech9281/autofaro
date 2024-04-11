@@ -1,6 +1,6 @@
 const { REST, Routes } = require('discord.js');
-const fs = require('node:fs');
 const path = require('node:path');
+const fs = require('node:fs');
 require('dotenv').config();
 
 // Create an array to store the command data
