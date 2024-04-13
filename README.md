@@ -11,10 +11,12 @@ AutoFaro is a Discord application powered by AI designed to automate processes
 
 ## 🛠️TODO🛠️
 
+- Implement Warning System
 - Create a documentation for app
-- Implement server management functions
-- Implement integration with Web3/Blockchain 
-- Implement AI services for texting and image generation
+- Implement Server Management functions
+- Implement integration with Web3/Blockchain
+- Make support for Microsoft Teams and WhatsApp
+- Implement AI services for Texting, Voice Recognition, Speech and Image Generation
 
 ## 🚀Getting Started🚀
 
